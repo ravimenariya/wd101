@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form with Age Validation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Register Now</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="form-group">
+                <input type="date" id="dob" name="dob" required>
+                <label for="dob">Date of Birth</label>
+            </div>
+            <div class="error" id="ageError">Age must be between 18 and 55</div>
+            <input type="checkbox" id="terms" required> Accept Terms and Conditions <br><br><br>
+            <div class="success" id="success">User Registered Successfully</div>
+            <button type="submit" class="btn">Register</button>
+
+        </form>
+    </div>
+
+    <div class="entries">
+        <h1>User Entries</h1>
+        <table id="table">
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
